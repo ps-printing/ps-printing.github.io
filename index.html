@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PS Printing | Custom T-shirt & Hoodie Printing</title>
+<meta name="description" content="Custom printed t-shirts and hoodies. Design it live, send it on WhatsApp, we print it.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..900;1,100..125,400..900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#home"><img src="logo.png" alt="PS Printing logo"></a>
+  <nav>
+    <a href="#studio">Design studio</a>
+    <a href="#products">What we print</a>
+    <a href="#process">How it works</a>
+    <a class="btn small" href="#order">Order</a>
+  </nav>
+</header>
+<div class="cmy" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<main id="home">
+  <section class="hero" id="studio">
+    <div class="hero-copy">
+      <h1>Wear your idea.<br>We print it.</h1>
+      <p>Type your text, pick the colours and see your t-shirt or hoodie before you order. Then send it to us on WhatsApp.</p>
+      <div class="controls">
+        <div class="group" role="group" aria-label="Garment">
+          <button class="chip on" data-type="tee">T-shirt</button>
+          <button class="chip" data-type="hoodie">Hoodie</button>
+        </div>
+        <label class="field">Your text
+          <input id="txt" type="text" maxlength="18" value="PS PRINTING" autocomplete="off">
+        </label>
+        <div class="swatches" aria-label="Garment colour" id="garment-colors"></div>
+        <div class="swatches" aria-label="Print colour" id="print-colors"></div>
+        <div class="group" role="group" aria-label="Size">
+          <button class="chip" data-size="S">S</button><button class="chip on" data-size="M">M</button><button class="chip" data-size="L">L</button><button class="chip" data-size="XL">XL</button>
+        </div>
+        <button class="btn" id="send">Send this design on WhatsApp</button>
+      </div>
+    </div>
+    <div class="stage">
+      <svg id="garment" viewBox="0 0 400 440" role="img" aria-label="Live preview of your design">
+        <g id="hood-extra" style="display:none">
+          <path id="hood" d="M135 28 Q200 -30 265 28 L255 80 Q200 110 145 80 Z"/>
+          <path id="pocket" d="M140 330 L260 330 L275 395 L125 395 Z"/>
+        </g>
+        <path id="body" d="M130 24 L40 74 L10 170 L72 192 L95 154 L95 408 L305 408 L305 154 L328 192 L390 170 L360 74 L270 24 Q200 78 130 24 Z"/>
+        <text id="print" x="200" y="210" text-anchor="middle">PS PRINTING</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>What we print</h2>
+    <div class="grid">
+      <article><h3>T-shirts</h3><p>Single pieces, team shirts and event batches in all sizes. Sharp prints that last through the wash.</p></article>
+      <article><h3>Hoodies</h3><p>Heavy, warm hoodies with front or back prints. Ideal for college groups, brands and gifts.</p></article>
+      <article><h3>Custom orders</h3><p>Your logo, your artwork, your quantity. Tell us what you need and we will quote it.</p></article>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <h2>How it works</h2>
+    <ol>
+      <li><b>1</b><span>Design it above or send your own artwork.</span></li>
+      <li><b>2</b><span>Choose garment, colour, size and quantity.</span></li>
+      <li><b>3</b><span>We confirm the price and print your order.</span></li>
+      <li><b>4</b><span>Pick it up or get it delivered.</span></li>
+    </ol>
+  </section>
+
+  <section class="order" id="order">
+    <h2>Place an order</h2>
+    <form id="form">
+      <input id="f-name" placeholder="Your name" required>
+      <select id="f-item"><option>T-shirt</option><option>Hoodie</option><option>Both</option></select>
+      <input id="f-qty" type="number" min="1" value="1" aria-label="Quantity">
+      <textarea id="f-msg" rows="3" placeholder="Tell us about your design, colours and deadline"></textarea>
+      <button class="btn" type="submit">Send order on WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <img src="logo.png" alt="">
+  <p>PS Printing. T-shirt printing.</p>
+  <p id="contact"></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
