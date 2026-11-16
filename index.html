@@ -524,7 +524,7 @@
 </footer>
 </main>
 <!-- ======================================================== -->
-<!-- MODAL 1: OWNER ADMIN AUTHENTICATION (SECRET PIN: 7788)   -->
+<!-- MODAL 1: OWNER ADMIN AUTHENTICATION (SECRET PIN: )   -->
 <!-- ======================================================== -->
 <div class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md hidden items-center justify-center p-4" id="pin-modal">
 <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-slate-200 text-center space-y-4">
@@ -533,7 +533,7 @@
 </div>
 <div>
 <h3 class="font-headline font-bold text-xl text-slate-900 uppercase">Owner Access Required</h3>
-<p class="text-xs text-slate-500 mt-1">Please enter your authorized administrative PIN (7788) to view real-time orders, manage stock, and confirm revenue.</p>
+<p class="text-xs text-slate-500 mt-1">Please enter your authorized administrative PIN () to view real-time orders, manage stock, and confirm revenue.</p>
 </div>
 <div>
 <input class="w-full text-center tracking-[0.5em] text-2xl font-headline font-bold py-3 rounded-xl border border-slate-300 focus:border-racing-red focus:outline-none" id="pin-input" maxlength="6" placeholder="Enter PIN" type="password"/>
@@ -1483,7 +1483,7 @@
       showToast("Thank you! Your verified client review has been published.");
     }
 
-    // --- OWNER ADMIN PIN SECURITY (PIN: 7788) ---
+    // --- OWNER ADMIN PIN SECURITY (PIN: ) ---
     function openAdminModal() {
       document.getElementById('pin-modal').classList.remove('hidden');
       document.getElementById('pin-modal').classList.add('flex');
