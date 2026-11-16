@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PS PRINTING - Luxury Atelier &amp; 360° Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "racing-red": "#E4161C",
+            "racing-red-hover": "#C00010",
+            "racing-red-bright": "#EF4444",
+            "racing-red-soft": "#FEE2E2",
+            "gold": "#D4AF37",
+            "dark-slate": "#0F172A",
+            "charcoal": "#1E293B",
+            "titanium": "#64748B",
+            "border-light": "#E2E8F0",
+            "bg-soft": "#F8FAFC",
+            "bg-card": "#FFFFFF",
+          },
+          fontFamily: {
+            headline: ["Space Grotesk", "sans-serif"],
+            body: ["Manrope", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; scroll-behavior: smooth; }
+      body { overscroll-behavior: none; }
+    }
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .pulse-subtle { animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  </style>
+</head>
+<body class="bg-[#F8FAFC] text-[#0F172A] font-body antialiased selection:bg-racing-red selection:text-white">
+<!-- TOP ANNOUNCEMENT BANNER -->
+<div class="w-full bg-[#0F172A] text-white py-2 px-4 border-b border-slate-800">
+<div class="max-w-[1440px] mx-auto flex flex-wrap items-center justify-between text-xs tracking-wider">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-racing-red/20 text-red-400 font-headline font-bold text-[10px] uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-racing-red animate-ping"></span>
+<span data-i18n="packPromoBadge">SPECIAL PACK OFFER</span>
+</span>
+<span class="font-medium text-slate-300" data-i18n="packPromoText">1 Jacket: 19,90 € • Special Bundle: 3 Jackets for 50,00 € (Save 9,70 €)</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-slate-400 hidden sm:inline" data-i18n="waDispatchNotice">WhatsApp Direct Telemetry &amp; Digital BAT Validation</span>
+<div class="h-3 w-px bg-slate-700 hidden sm:block"></div>
+<!-- Multi-language Switcher -->
+<div class="flex items-center gap-1 bg-slate-800/80 p-0.5 rounded-md border border-slate-700">
+<button class="px-2 py-0.5 rounded text-[11px] font-headline font-bold transition-all bg-racing-red text-white" id="lang-en" onclick="setLanguage('en')">EN</button>
+<button class="px-2 py-0.5 rounded text-[11px] font-headline font-bold transition-all text-slate-300 hover:text-white" id="lang-fr" onclick="setLanguage('fr')">FR</button>
+<button class="px-2 py-0.5 rounded text-[11px] font-headline font-bold transition-all text-slate-300 hover:text-white" id="lang-ta" onclick="setLanguage('ta')">தமிழ்</button>
+</div>
+</div>
+</div>
+</div>
+<!-- NAVIGATION HEADER (Crisp Luxury White) -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-3 group" href="#">
+<img alt="PS Printing Logo" class="h-10 w-auto object-contain filter group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTOp3C2M8YgnzYaZkn5-Xp_fp8PX6l0ogYmF1eZrtn7QI7V3pxk68uSyJdtpO8zN4xV1Exyj_TKZnSkMmT_nRu6dA8QanNoC86KPeGiBfpvvF2ckIgyqgplk8jRtdBnQPEcm0If3uGbhKGDrePfrHfm5GJMBBNa2vrFhVnfoPDx2rEjJ5YviozOXGZRPkRQnfW6yAW-tWEB5RCLO5-6YCK9J58d2dCxYhvaV2cvRdi6w1PQ00D5rnJ"/>
+<div class="hidden md:block">
+<span class="font-headline font-bold text-lg tracking-wider text-[#0F172A] block leading-none">PS PRINTING</span>
+<span class="text-[10px] font-headline uppercase tracking-widest text-slate-400">Haute Couture Atelier</span>
+</div>
+</a>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8 font-headline text-sm font-semibold tracking-wider text-slate-700">
+<a class="text-racing-red hover:text-racing-red-hover transition-colors" data-i18n="navStorefront" href="#atelier">STOREFRONT</a>
+<a class="hover:text-racing-red transition-colors" data-i18n="navReviews" href="#reviews" id="nav-reviews-link">CUSTOMER REVIEWS (0)</a>
+<a class="hover:text-racing-red transition-colors" data-i18n="navSpecs" href="#specs">SPECIFICATIONS</a>
+<a class="hover:text-racing-red transition-colors" data-i18n="navFaq" href="#faq">BAT &amp; DELIVERY</a>
+</nav>
+<!-- Right Actions & Owner Portal Button -->
+<div class="flex items-center gap-3">
+<!-- Wishlist Button -->
+<button class="p-2.5 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-600 transition-all flex items-center gap-1.5" id="wishlist-btn" onclick="toggleWishlist()" title="Wishlist">
+<span class="material-symbols-outlined text-xl text-rose-500" id="wishlist-icon">favorite_border</span>
+<span class="text-xs font-bold font-headline" id="wishlist-count">0</span>
+</button>
+<!-- Share Button -->
+<button class="p-2.5 rounded-lg border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-600 transition-all flex items-center gap-1.5" onclick="shareStorefront()" title="Share">
+<span class="material-symbols-outlined text-xl text-blue-500">share</span>
+</button>
+<!-- Owner Admin Button (Protected) -->
+<button class="px-3 py-2 rounded-lg bg-slate-900 hover:bg-black text-white font-headline font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 shadow-sm transition-all" onclick="openAdminModal()">
+<span class="material-symbols-outlined text-sm text-racing-red">lock</span>
+<span data-i18n="ownerAdminBtn">Owner Portal</span>
+</button>
+</div>
+</div>
+</header>
+<!-- MAIN LUXURY STOREFRONT CONTAINER -->
+<main class="w-full">
+<!-- PRODUCT SHOWCASE SECTION -->
+<section class="py-10 lg:py-14 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto" id="atelier">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+<!-- LEFT COLUMN: 3D TURNTABLE & VIDEO-LIKE SIMULATOR -->
+<div class="lg:col-span-7 flex flex-col gap-4">
+<!-- 3D Stage Card -->
+<div class="bg-white rounded-2xl p-6 border border-slate-200/90 shadow-lg relative overflow-hidden">
+<!-- Header Badges -->
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-racing-red animate-pulse"></span>
+<span class="font-headline font-bold text-xs uppercase tracking-widest text-slate-500" data-i18n="turntableTitle">360° ATELIER TURNTABLE SIMULATOR</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-[11px] font-headline font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-slate-100 text-slate-700" id="turntable-deg-label">ANGLE: 270°</span>
+<button class="px-2.5 py-1 rounded bg-slate-900 text-white font-headline text-xs font-bold uppercase flex items-center gap-1 hover:bg-black transition-colors" id="autoplay-btn" onclick="toggleAutoPlay()">
+<span class="material-symbols-outlined text-sm" id="autoplay-icon">play_arrow</span>
+<span data-i18n="autoSpin" id="autoplay-text">Auto-Spin 3D</span>
+</button>
+</div>
+</div>
+<!-- Interactive Stage Area -->
+<div class="relative w-full aspect-square md:aspect-[4/3] rounded-xl bg-gradient-to-b from-slate-100 to-slate-200/60 flex items-center justify-center cursor-grab active:cursor-grabbing select-none overflow-hidden group shadow-inner border border-slate-200" id="turntable-container">
+<!-- Lighting Ambient Halo -->
+<div class="absolute inset-0 bg-radial from-racing-red/10 via-transparent to-transparent opacity-80 transition-all duration-300 pointer-events-none" id="stage-halo"></div>
+<!-- CMYK & Density Telemetry Watermark -->
+<div class="absolute top-4 left-4 font-headline text-[10px] text-slate-400 font-bold tracking-wider leading-tight">
+                SPEC: 400 GSM COMBED COTTON<br/>DTF HIGH DEFINITION • BAT DIGITAL
+              </div>
+<!-- Product Image on Pedestal -->
+<div class="relative w-full h-full flex items-center justify-center p-6">
+<img alt="400 GSM Black Full-Zip Motorsport Jacket" class="max-h-full max-w-full object-contain filter drop-shadow-[0_25px_35px_rgba(0,0,0,0.35)] transition-transform duration-75 will-change-transform" id="turntable-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvm_ncMWDp1RCDZ0fUDHhw-1D-Rc8udSFw_Tb8W44OkgM1mCM8y-VUCg2sxbQjI2BtPOYBK6af-rgnI4V1RnMd44DhWaydt8l4NLo3F9e3mg5frXlWT_r6TOIfJyOmBVMvpntloPLOW1lIj4XsZ-Sh0JBymT3aMF49ozgveP73Wi9UEvH9MSehFqUTMrk0E963IJm1eWlmkdCTLJVZcZbOoI_bvOIISF02L_pRXzhajOaB5yFPE2V5"/>
+</div>
+<!-- Instruction Floating Badge -->
+<div class="absolute bottom-4 inset-x-0 flex items-center justify-center pointer-events-none">
+<div class="bg-white/95 backdrop-blur-md border border-slate-300/80 px-4 py-1.5 rounded-full shadow-md flex items-center gap-2 text-slate-700">
+<span class="material-symbols-outlined text-base text-racing-red animate-pulse">360</span>
+<span class="font-headline font-bold text-xs uppercase tracking-wider" data-i18n="dragHint">Drag left/right or use controls to inspect</span>
+</div>
+</div>
+</div>
+<!-- Continuous Orbit Slider -->
+<div class="mt-4 pt-2">
+<div class="flex items-center justify-between text-xs font-headline font-semibold text-slate-500 uppercase mb-1.5">
+<span data-i18n="rotationTrack">Manual Orbit Angle</span>
+<span class="text-racing-red font-bold" id="slider-angle-readout">270°</span>
+</div>
+<input class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-racing-red" id="turntable-slider" max="360" min="0" oninput="onSliderMove(this.value)" type="range" value="270"/>
+</div>
+<!-- Quick Angle & Lighting Presets -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-4">
+<button class="py-2 px-3 rounded-lg border border-slate-200 hover:border-racing-red text-xs font-headline font-bold uppercase text-slate-700 transition-colors" data-i18n="angleFront" onclick="setAngle(0)">0° Front View</button>
+<button class="py-2 px-3 rounded-lg border border-slate-200 hover:border-racing-red text-xs font-headline font-bold uppercase text-slate-700 transition-colors" data-i18n="angleProfile" onclick="setAngle(90)">90° Profile</button>
+<button class="py-2 px-3 rounded-lg border border-slate-200 hover:border-racing-red text-xs font-headline font-bold uppercase text-slate-700 transition-colors" data-i18n="angleBack" onclick="setAngle(180)">180° Back</button>
+<button class="py-2 px-3 rounded-lg bg-racing-red text-white text-xs font-headline font-bold uppercase shadow-sm transition-colors" data-i18n="angleAtelier" onclick="setAngle(270)">270° Atelier</button>
+</div>
+</div>
+<!-- Paddock Trust Badges Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-racing-red">verified</span>
+<div>
+<span class="font-headline font-bold text-xs uppercase block text-slate-900" data-i18n="badgeGsm">400 GSM</span>
+<span class="text-[11px] text-slate-500 block leading-tight" data-i18n="badgeGsmDesc">Ultra-heavy cotton</span>
+</div>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-blue-600">lock</span>
+<div>
+<span class="font-headline font-bold text-xs uppercase block text-slate-900" data-i18n="badgeBat">Digital BAT</span>
+<span class="text-[11px] text-slate-500 block leading-tight" data-i18n="badgeBatDesc">100% WhatsApp Approval</span>
+</div>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-emerald-600">local_shipping</span>
+<div>
+<span class="font-headline font-bold text-xs uppercase block text-slate-900" data-i18n="badgeDispatch">Express</span>
+<span class="text-[11px] text-slate-500 block leading-tight" data-i18n="badgeDispatchDesc">Dispatch under 24H</span>
+</div>
+</div>
+<div class="bg-white p-3.5 rounded-xl border border-slate-200 flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-amber-500">stars</span>
+<div>
+<span class="font-headline font-bold text-xs uppercase block text-slate-900" id="badge-rating-val">0.0 / 5.0</span>
+<span class="text-[11px] text-slate-500 block leading-tight" id="badge-reviews-count">0 verified reviews</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: PRODUCT TITLE, BUNDLE PRICING, & STRICT ORDER FORM -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-lg space-y-6">
+<!-- Category & Ratings Header -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 text-[11px] font-headline font-bold uppercase tracking-wider" data-i18n="editionBadge">
+                  COLLECTION 2026 • LIMITED ATELIER RUN
+                </span>
+<!-- Rating link to reviews -->
+<a class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 hover:text-racing-red transition-colors" href="#reviews">
+<div class="flex text-amber-400 text-sm" id="header-stars">☆☆☆☆☆</div>
+<span class="font-bold" id="header-rating-val">0.0</span>
+<span class="text-slate-400" id="header-rating-count">(0)</span>
+</a>
+</div>
+<h1 class="font-headline font-bold text-2xl sm:text-3xl text-slate-900 uppercase tracking-tight" data-i18n="productTitle">
+                PREMIUM BLACK FULL-ZIP 400 GSM
+              </h1>
+<p class="text-slate-600 text-sm leading-relaxed" data-i18n="productDesc">
+                Tailored motorsport precision zipper jacket. Engineered with 400 GSM heavyweight structured combed cotton, dual reinforced YKK metal hardware, and brushed thermal interior fleece.
+              </p>
+</div>
+<!-- PROMOTIONAL BUNDLE CARD (3 FOR 50€) -->
+<div class="p-4 rounded-xl bg-gradient-to-r from-red-50 to-orange-50 border-2 border-racing-red/40 space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-racing-red text-xl">local_fire_department</span>
+<span class="font-headline font-bold text-sm text-racing-red uppercase tracking-wide" data-i18n="bundleTitle">SPECIAL ATELIER PACK: 3 FOR 50 €</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-racing-red text-white text-[10px] font-headline font-bold uppercase" data-i18n="bundleSave">SAVE 9,70 €</span>
+</div>
+<p class="text-xs text-slate-700 leading-normal" data-i18n="bundleExplanation">
+                Buy 1 unit for 19,90 €. Choose 3 or more units to automatically trigger the bundle rate of <strong>50,00 € for 3 jackets</strong> (mix any sizes)!
+              </p>
+</div>
+<!-- PRICING DISPLAY & REAL-TIME CALCULATION -->
+<div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-center justify-between">
+<div>
+<span class="text-[11px] font-headline font-semibold uppercase tracking-wider text-slate-500 block" data-i18n="unitPriceLabel">Price per Unit</span>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-headline font-bold text-slate-900">19,90 €</span>
+<span class="text-xs text-slate-400 line-through">45,00 € MSRP</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-[11px] font-headline font-bold uppercase tracking-wider text-emerald-600 flex items-center gap-1 justify-end">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span data-i18n="stockStatus">IN STOCK &amp; DISPATCHING</span>
+</span>
+<span class="text-xs text-slate-500 font-medium" id="chassis-available-text">147 chassis available in atelier</span>
+</div>
+</div>
+<!-- STEP 1: SIZE SELECTOR (With live stock count) -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-headline font-bold uppercase">
+<span class="text-slate-800" data-i18n="selectSizeTitle">1. Select Chassis Size:</span>
+<span class="text-racing-red" id="active-size-label">SIZE: L (Selected)</span>
+</div>
+<div class="grid grid-cols-5 gap-2" id="size-button-group">
+<button class="size-btn p-2 rounded-lg border-2 border-slate-200 hover:border-slate-400 text-center transition-all bg-white" data-size="S" onclick="selectSize('S', 14)" type="button">
+<span class="font-headline font-bold text-sm block text-slate-900">S</span>
+<span class="text-[10px] text-slate-500 block" id="stock-S">14 left</span>
+</button>
+<button class="size-btn p-2 rounded-lg border-2 border-slate-200 hover:border-slate-400 text-center transition-all bg-white" data-size="M" onclick="selectSize('M', 38)" type="button">
+<span class="font-headline font-bold text-sm block text-slate-900">M</span>
+<span class="text-[10px] text-slate-500 block" id="stock-M">38 left</span>
+</button>
+<button class="size-btn p-2 rounded-lg border-2 border-racing-red bg-red-50/50 text-center transition-all shadow-sm" data-size="L" onclick="selectSize('L', 56)" type="button">
+<span class="font-headline font-bold text-sm block text-racing-red">L</span>
+<span class="text-[10px] font-bold text-racing-red block" id="stock-L">56 left</span>
+</button>
+<button class="size-btn p-2 rounded-lg border-2 border-slate-200 hover:border-slate-400 text-center transition-all bg-white" data-size="XL" onclick="selectSize('XL', 27)" type="button">
+<span class="font-headline font-bold text-sm block text-slate-900">XL</span>
+<span class="text-[10px] text-slate-500 block" id="stock-XL">27 left</span>
+</button>
+<button class="size-btn p-2 rounded-lg border-2 border-slate-200 hover:border-slate-400 text-center transition-all bg-white" data-size="XXL" onclick="selectSize('XXL', 12)" type="button">
+<span class="font-headline font-bold text-sm block text-slate-900">XXL</span>
+<span class="text-[10px] text-slate-500 block" id="stock-XXL">12 left</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: QUANTITY SELECTOR & INSTANT BUNDLE CALCULATION -->
+<div class="space-y-2">
+<div class="flex items-center justify-between text-xs font-headline font-bold uppercase">
+<span class="text-slate-800" data-i18n="selectQtyTitle">2. Select Quantity:</span>
+<span class="text-slate-500" id="calculation-formula">1 x 19,90 € = 19,90 €</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center border-2 border-slate-200 rounded-xl overflow-hidden bg-white">
+<button class="w-11 h-11 flex items-center justify-center font-bold text-lg text-slate-700 hover:bg-slate-100 transition-colors" onclick="adjustOrderQty(-1)" type="button">-</button>
+<input class="w-14 text-center font-headline font-bold text-lg text-slate-900 border-x-2 border-slate-200 focus:outline-none" id="order-qty-input" max="50" min="1" onchange="onQtyDirectChange(this.value)" type="number" value="1"/>
+<button class="w-11 h-11 flex items-center justify-center font-bold text-lg text-slate-700 hover:bg-slate-100 transition-colors" onclick="adjustOrderQty(1)" type="button">+</button>
+</div>
+<!-- Dynamic Total & Discount Display -->
+<div class="flex-1 p-2.5 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-between">
+<div>
+<span class="text-[10px] font-headline font-semibold text-slate-500 uppercase block" data-i18n="totalToPay">Total to Pay</span>
+<span class="text-xl font-headline font-bold text-slate-900" id="final-total-price">19,90 €</span>
+</div>
+<div class="hidden text-right" id="bundle-saving-tag">
+<span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 text-[10px] font-headline font-bold uppercase" data-i18n="packApplied">Pack Applied!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- STEP 3: STRICT MANDATORY CUSTOMER FORM -->
+<div class="space-y-3 pt-2 border-t border-slate-200">
+<span class="text-xs font-headline font-bold uppercase text-slate-800 block" data-i18n="stepFormTitle">
+                3. Customer Coordinates (Required / Obligatoire):
+              </span>
+<!-- Full Name Field -->
+<div>
+<label class="text-[11px] font-headline font-bold uppercase text-slate-600 block mb-1">
+<span data-i18n="labelName">Full Name / Nom Prénom</span> <span class="text-racing-red">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-racing-red focus:ring-1 focus:ring-racing-red focus:outline-none text-sm text-slate-900 transition-all" id="customer-name" placeholder="e.g. Thomas Durand" type="text"/>
+</div>
+<!-- WhatsApp Phone Field -->
+<div>
+<label class="text-[11px] font-headline font-bold uppercase text-slate-600 block mb-1">
+<span data-i18n="labelPhone">WhatsApp Telemetry Phone (with country code)</span> <span class="text-racing-red">*</span>
+</label>
+<input class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:border-racing-red focus:ring-1 focus:ring-racing-red focus:outline-none text-sm text-slate-900 transition-all" id="customer-phone" placeholder="+33 6 12 34 56 78" type="tel"/>
+</div>
+<!-- Full Delivery Address -->
+<div>
+<label class="text-[11px] font-headline font-bold uppercase text-slate-600 block mb-1">
+<span data-i18n="labelAddress">Delivery Address (Street, Postal Code, City)</span> <span class="text-racing-red">*</span>
+</label>
+<textarea class="w-full px-3.5 py-2 rounded-xl border border-slate-300 focus:border-racing-red focus:ring-1 focus:ring-racing-red focus:outline-none text-sm text-slate-900 transition-all" id="customer-address" placeholder="e.g. 14 Rue de la Paix, 75002 Paris, France" rows="2"></textarea>
+</div>
+<!-- Custom Livery / Paddock Notes (Optional) -->
+<div>
+<label class="text-[11px] font-headline font-semibold uppercase text-slate-500 block mb-1" data-i18n="labelNotes">
+                  Custom Livery / BAT Notes (Optional)
+                </label>
+<input class="w-full px-3.5 py-2 rounded-xl border border-slate-300 focus:border-racing-red focus:ring-1 focus:ring-racing-red focus:outline-none text-sm text-slate-900 transition-all" id="customer-notes" placeholder="e.g. Initial print on left chest, specific race number" type="text"/>
+</div>
+<!-- Error Alert Box -->
+<div class="hidden p-3 rounded-lg bg-red-50 border border-red-200 text-red-700 text-xs font-semibold" id="form-error-alert">
+                ⚠️ Please fill in all mandatory fields (Name, WhatsApp Phone, Address) before ordering!
+              </div>
+<!-- WHATSAPP 1-CLICK ORDER BUTTON -->
+<button class="w-full py-4 px-6 rounded-xl bg-racing-red hover:bg-racing-red-hover text-white font-headline font-bold text-base uppercase tracking-wider transition-all shadow-lg shadow-red-500/25 flex items-center justify-center gap-2 group" onclick="submitWhatsAppOrder()" type="button">
+<span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">send</span>
+<span data-i18n="btnOrderWhatsApp" id="order-button-text">ORDER ON WHATSAPP (19,90 €)</span>
+</button>
+<!-- BAT Guarantee Assurance -->
+<div class="flex items-start gap-2 pt-1 text-slate-500 text-xs">
+<span class="material-symbols-outlined text-base text-racing-red mt-0.5">verified_user</span>
+<span data-i18n="batSecurityNote">
+                  A unique order docket (e.g. <strong>#PSP-2026-XXXX</strong>) is created. Digital BAT mockups will be dispatched to your WhatsApp for approval prior to needle strike.
+                </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER REVIEWS & RATINGS SECTION (Luxury E-Commerce / Sephora Style) -->
+<section class="py-14 bg-white border-y border-slate-200" id="reviews">
+<div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<div>
+<span class="text-racing-red font-headline font-bold text-xs uppercase tracking-widest block mb-1" data-i18n="reviewsSubtitle">VERIFIED ATELIER CLIENT FEEDBACK</span>
+<h2 class="font-headline font-bold text-3xl text-slate-900 uppercase tracking-tight" data-i18n="reviewsTitle">Customer Reviews &amp; Ratings</h2>
+</div>
+<!-- Leave Review CTA -->
+<button class="px-5 py-2.5 rounded-xl border-2 border-slate-900 hover:bg-slate-900 hover:text-white text-slate-900 font-headline font-bold text-xs uppercase tracking-wider transition-all flex items-center gap-2" onclick="toggleReviewModal()">
+<span class="material-symbols-outlined text-sm">rate_review</span>
+<span data-i18n="btnLeaveReview">Leave a Review</span>
+</button>
+</div>
+<!-- Rating Overview Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200 mb-10">
+<!-- Overall Score -->
+<div class="lg:col-span-4 text-center lg:text-left border-b lg:border-b-0 lg:border-r border-slate-200 pb-6 lg:pb-0 lg:pr-8">
+<div class="text-5xl font-headline font-bold text-slate-900 tracking-tight" id="review-main-score">0.0<span class="text-2xl text-slate-400"> / 5.0</span></div>
+<div class="flex justify-center lg:justify-start text-amber-400 text-xl my-2" id="review-main-stars">☆☆☆☆☆</div>
+<p class="text-xs text-slate-500 font-medium" data-i18n="reviewScoreBasis" id="review-score-basis">Based on 0 verified client reviews</p>
+<div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold" id="review-recommend-badge">
+<span class="material-symbols-outlined text-xs">verified</span>
+<span data-i18n="reviewRecRate" id="review-rec-rate">No reviews yet • Be the first verified client</span>
+</div>
+</div>
+<!-- Breakdown Bars -->
+<div class="lg:col-span-8 space-y-2">
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-slate-600 font-medium">5 stars</span>
+<div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="bg-amber-400 h-full w-[0%] rounded-full transition-all duration-300" id="bar-5"></div>
+</div>
+<span class="w-10 text-right text-slate-500" id="count-bar-5">0</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-slate-600 font-medium">4 stars</span>
+<div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="bg-amber-400 h-full w-[0%] rounded-full transition-all duration-300" id="bar-4"></div>
+</div>
+<span class="w-10 text-right text-slate-500" id="count-bar-4">0</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-slate-600 font-medium">3 stars</span>
+<div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="bg-amber-400 h-full w-[0%] rounded-full transition-all duration-300" id="bar-3"></div>
+</div>
+<span class="w-10 text-right text-slate-500" id="count-bar-3">0</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-slate-600 font-medium">2 stars</span>
+<div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="bg-amber-400 h-full w-[0%] rounded-full transition-all duration-300" id="bar-2"></div>
+</div>
+<span class="w-10 text-right text-slate-500" id="count-bar-2">0</span>
+</div>
+<div class="flex items-center gap-3 text-xs">
+<span class="w-12 text-slate-600 font-medium">1 star</span>
+<div class="flex-1 h-2 rounded-full bg-slate-200 overflow-hidden">
+<div class="bg-amber-400 h-full w-[0%] rounded-full transition-all duration-300" id="bar-1"></div>
+</div>
+<span class="w-10 text-right text-slate-500" id="count-bar-1">0</span>
+</div>
+</div>
+</div>
+<!-- Verified Reviews Cards List -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="reviews-card-container">
+<!-- Populated purely by real reviews from localStorage -->
+</div>
+<!-- Empty Reviews State -->
+<div class="py-12 px-6 text-center border-2 border-dashed border-slate-200 rounded-2xl bg-slate-50" id="reviews-empty-state">
+<span class="material-symbols-outlined text-4xl text-slate-400 mb-2">reviews</span>
+<p class="font-headline font-bold text-slate-800 text-base" data-i18n="emptyReviewsTitle">No client reviews yet</p>
+<p class="text-xs text-slate-500 mt-1 max-w-md mx-auto" data-i18n="emptyReviewsSubtitle">Be the first verified customer to share feedback about the 400 GSM technical fit and finish!</p>
+<button class="mt-4 px-4 py-2 rounded-xl bg-racing-red hover:bg-racing-red-hover text-white text-xs font-headline font-bold uppercase transition-all" onclick="toggleReviewModal()">
+            Write First Review
+          </button>
+</div>
+</div>
+</section>
+<!-- TECHNICAL SPECIFICATIONS & BAT ASSURANCE -->
+<section class="py-14 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto" id="specs">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+<div>
+<span class="text-racing-red font-headline font-bold text-xs uppercase tracking-widest block mb-1" data-i18n="specHomologation">HOMOLOGATION SPECIFICATION</span>
+<h2 class="font-headline font-bold text-3xl text-slate-900 uppercase tracking-tight mb-4" data-i18n="specHeading">Engineered for Track &amp; Streetwear Luxury</h2>
+<p class="text-slate-600 text-sm leading-relaxed mb-6" data-i18n="specLead">
+            Every fiber of the 19,90 € Premium Black Full-Zip is tested to resist high thermal wash cycles, wind resistance, and abrasion while maintaining a stealth haute-couture silhouette.
+          </p>
+<div class="space-y-3">
+<div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+<span class="font-headline font-bold text-xs uppercase text-slate-700" data-i18n="spec1">Yarn &amp; Weight</span>
+<span class="text-xs font-bold text-slate-900">400 GSM Combed Long-Staple Cotton</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+<span class="font-headline font-bold text-xs uppercase text-slate-700" data-i18n="spec2">Hardware Slider</span>
+<span class="text-xs font-bold text-slate-900">Heavy-Gauge YKK Dual Reversible Metal Zips</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+<span class="font-headline font-bold text-xs uppercase text-slate-700" data-i18n="spec3">Print Fidelity</span>
+<span class="text-xs font-bold text-slate-900">8-Color High Definition DTF Wash-Resistant</span>
+</div>
+<div class="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+<span class="font-headline font-bold text-xs uppercase text-slate-700" data-i18n="spec4">Pre-Shrunk Tolerance</span>
+<span class="text-xs font-bold text-slate-900">&lt; 1.2% Vapor-Set Thermal Finish</span>
+</div>
+</div>
+</div>
+<!-- Macro Visual Showcase -->
+<div class="grid grid-cols-2 gap-4">
+<div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-md">
+<img alt="Heavy cotton texture and YKK zipper detail" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/ALJJyrArRBe5qHoh9MX0Y_BZUWhp1A6t627ChkjPn9Ypvw0rV_6LQ7uVuCOmWO-rf0h5oe_ZpBZhFzzcAjBHZWBPJAWsMCCEZx0jrZjilWlaVo5ix6AZYQBW943N1mg0ZqmeSNbQ7ZzaHpOSeaioweia-NtikUib9FAXR7RdvP4kQ9Zdzr36BqABRx6TcCVAQxF5Yo6frtTMb6pxgXF-XXdNOxriimakVsw47WOAoA1UMqI"/>
+</div>
+<div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 shadow-md mt-6">
+<img alt="Motorsport silhouette full-zip jacket" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvm_ncMWDp1RCDZ0fUDHhw-1D-Rc8udSFw_Tb8W44OkgM1mCM8y-VUCg2sxbQjI2BtPOYBK6af-rgnI4V1RnMd44DhWaydt8l4NLo3F9e3mg5frXlWT_r6TOIfJyOmBVMvpntloPLOW1lIj4XsZ-Sh0JBymT3aMF49ozgveP73Wi9UEvH9MSehFqUTMrk0E963IJm1eWlmkdCTLJVZcZbOoI_bvOIISF02L_pRXzhajOaB5yFPE2V5"/>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER (Clean Luxury White with Direct Contact) -->
+<footer class="bg-white border-t border-slate-200 py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-racing-red"></span>
+<span class="font-headline font-bold text-base text-slate-900 tracking-wider">PS PRINTING</span>
+</div>
+<p class="text-xs text-slate-500 leading-relaxed" data-i18n="footerAbout">
+            Haute couture motorsport technical apparel atelier. Bespoke DTF printing, titanium precision construction, and automated WhatsApp BAT order confirmation.
+          </p>
+<div class="text-xs font-bold text-slate-700">Paris • Lyon • Monaco • Chennai</div>
+</div>
+<div class="space-y-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wider text-slate-900 block" data-i18n="footerColTitle1">Direct Hotline</span>
+<div class="text-xs text-slate-600">WhatsApp: <a class="text-racing-red font-bold hover:underline" href="https://wa.me/33751392075">+33 7 51 39 20 75</a></div>
+<div class="text-xs text-slate-500">Validation BAT 7J/7 • 9h - 20h</div>
+<div class="text-xs text-slate-500">Expédition Colissimo &amp; La Poste Suivie</div>
+</div>
+<div class="space-y-2">
+<span class="font-headline font-bold text-xs uppercase tracking-wider text-slate-900 block" data-i18n="footerColTitle2">Guarantees</span>
+<div class="text-xs text-slate-600">✓ 100% WhatsApp Encrypted Docket</div>
+<div class="text-xs text-slate-600">✓ Digital Visual Simulation Before Print</div>
+<div class="text-xs text-slate-600">✓ Bundle Rate: 3 Jackets for 50 €</div>
+</div>
+<div class="space-y-3">
+<span class="font-headline font-bold text-xs uppercase tracking-wider text-slate-900 block" data-i18n="footerColTitle3">Owner Gate</span>
+<p class="text-xs text-slate-500" data-i18n="footerAdminDesc">Secure access for order validation, live stock editing, and telemetry sync.</p>
+<button class="px-3.5 py-1.5 rounded-lg bg-slate-900 hover:bg-black text-white text-xs font-headline font-bold uppercase tracking-wider flex items-center gap-1.5" onclick="openAdminModal()">
+<span class="material-symbols-outlined text-sm text-racing-red">admin_panel_settings</span>
+<span data-i18n="ownerAdminBtn">Owner Portal</span>
+</button>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto pt-8 mt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+<div>© 2026 PS PRINTING LTD. All Rights Reserved.</div>
+<div class="flex gap-4">
+<a class="hover:text-slate-600" href="#">Terms of Sale</a>
+<a class="hover:text-slate-600" href="#">Privacy &amp; BAT Notice</a>
+<a class="hover:text-slate-600" href="#">Delivery Policy</a>
+</div>
+</div>
+</footer>
+</main>
+<!-- ======================================================== -->
+<!-- MODAL 1: OWNER ADMIN AUTHENTICATION (SECRET PIN: 7788)   -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-md hidden items-center justify-center p-4" id="pin-modal">
+<div class="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-slate-200 text-center space-y-4">
+<div class="w-12 h-12 rounded-full bg-red-100 text-racing-red mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl">shield_lock</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-slate-900 uppercase">Owner Access Required</h3>
+<p class="text-xs text-slate-500 mt-1">Please enter your authorized administrative PIN (7788) to view real-time orders, manage stock, and confirm revenue.</p>
+</div>
+<div>
+<input class="w-full text-center tracking-[0.5em] text-2xl font-headline font-bold py-3 rounded-xl border border-slate-300 focus:border-racing-red focus:outline-none" id="pin-input" maxlength="6" placeholder="Enter PIN" type="password"/>
+<p class="hidden text-xs text-red-600 font-bold mt-2" id="pin-error">Incorrect PIN. Please re-enter.</p>
+</div>
+<div class="flex gap-2">
+<button class="flex-1 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-100 font-headline font-bold text-xs uppercase text-slate-700" onclick="closeAdminModal()">Cancel</button>
+<button class="flex-1 py-2.5 rounded-xl bg-racing-red hover:bg-racing-red-hover text-white font-headline font-bold text-xs uppercase" onclick="verifyPin()">Unlock Portal</button>
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- FULL OWNER ADMIN OPS DRAWER (Telemetry, Orders & Stock) -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 bg-[#0B0F19] text-slate-100 hidden overflow-y-auto" id="admin-portal">
+<!-- Admin Top Bar -->
+<div class="sticky top-0 z-10 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-4 sm:px-8 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-racing-red animate-ping"></span>
+<span class="font-headline font-bold text-sm tracking-wider uppercase text-white">PS PRINTING • OWNER COMMAND OPS</span>
+<span class="px-2 py-0.5 rounded bg-red-900/40 text-red-400 font-headline text-[10px] uppercase font-bold">SEC LEVEL 4</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-xs text-slate-400 font-mono hidden sm:inline" id="admin-time">LIVE SYNC ACTIVE</span>
+<button class="px-3 py-1.5 rounded-lg bg-red-600 hover:bg-red-700 text-white font-headline font-bold text-xs uppercase flex items-center gap-1" onclick="closeAdminPortal()">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Quick Lock</span>
+</button>
+</div>
+</div>
+<!-- Admin Body Content -->
+<div class="max-w-[1440px] mx-auto p-4 sm:p-6 lg:p-8 space-y-6">
+<!-- Top KPIs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+<span class="text-xs text-slate-400 font-headline uppercase block">Total Orders Registered</span>
+<div class="text-3xl font-headline font-bold text-white mt-1" id="admin-kpi-orders">0</div>
+<span class="text-[11px] text-slate-400 font-semibold mt-1 block">Live WhatsApp submissions</span>
+</div>
+<div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+<span class="text-xs text-slate-400 font-headline uppercase block">Confirmed Revenue</span>
+<div class="text-3xl font-headline font-bold text-emerald-400 mt-1" id="admin-kpi-revenue">0,00 €</div>
+<span class="text-[11px] text-slate-400 font-semibold mt-1 block">Only confirmed orders</span>
+</div>
+<div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+<span class="text-xs text-slate-400 font-headline uppercase block">Pending BAT / Orders</span>
+<div class="text-3xl font-headline font-bold text-racing-red-bright mt-1" id="admin-kpi-pending">0</div>
+<span class="text-[11px] text-racing-red-bright font-semibold mt-1 block">Awaiting Owner Confirmation</span>
+</div>
+<div class="bg-slate-900/90 p-5 rounded-xl border border-slate-800">
+<span class="text-xs text-slate-400 font-headline uppercase block">Atelier Stock On Hand</span>
+<div class="text-3xl font-headline font-bold text-slate-200 mt-1" id="admin-kpi-stock">147</div>
+<span class="text-[11px] text-slate-400 font-semibold mt-1 block">Editable below</span>
+</div>
+</div>
+<!-- LIVE STOCK EDITOR FORM -->
+<div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-racing-red text-xl">inventory_2</span>
+<h3 class="font-headline font-bold text-base uppercase text-white">Manual Stock Editor (Instant Client Sync)</h3>
+</div>
+<span class="text-xs text-slate-400">Type numbers directly and click Save</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+<div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+<span class="text-xs font-bold text-slate-300 block mb-1">Size S</span>
+<input class="w-full bg-slate-900 border border-slate-600 rounded-lg p-2 text-center font-headline font-bold text-lg text-white" id="admin-stock-S" type="number" value="14"/>
+</div>
+<div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+<span class="text-xs font-bold text-slate-300 block mb-1">Size M</span>
+<input class="w-full bg-slate-900 border border-slate-600 rounded-lg p-2 text-center font-headline font-bold text-lg text-white" id="admin-stock-M" type="number" value="38"/>
+</div>
+<div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+<span class="text-xs font-bold text-racing-red block mb-1">Size L</span>
+<input class="w-full bg-slate-900 border border-slate-600 rounded-lg p-2 text-center font-headline font-bold text-lg text-white" id="admin-stock-L" type="number" value="56"/>
+</div>
+<div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+<span class="text-xs font-bold text-slate-300 block mb-1">Size XL</span>
+<input class="w-full bg-slate-900 border border-slate-600 rounded-lg p-2 text-center font-headline font-bold text-lg text-white" id="admin-stock-XL" type="number" value="27"/>
+</div>
+<div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700">
+<span class="text-xs font-bold text-slate-300 block mb-1">Size XXL</span>
+<input class="w-full bg-slate-900 border border-slate-600 rounded-lg p-2 text-center font-headline font-bold text-lg text-white" id="admin-stock-XXL" type="number" value="12"/>
+</div>
+</div>
+<button class="px-5 py-2.5 rounded-xl bg-racing-red hover:bg-racing-red-hover text-white font-headline font-bold text-xs uppercase tracking-wider flex items-center gap-2" onclick="saveAdminStock()">
+<span class="material-symbols-outlined text-sm">save</span>
+<span>Save &amp; Update Client Inventory</span>
+</button>
+</div>
+<!-- LIVE ORDERS LOG TABLE -->
+<div class="bg-slate-900/90 p-6 rounded-2xl border border-slate-800 space-y-4">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-racing-red text-xl">receipt_long</span>
+<h3 class="font-headline font-bold text-base uppercase text-white">Live Customer Orders Registry</h3>
+</div>
+<div class="flex items-center gap-2 text-xs text-slate-400">
+<span>Pending orders in <strong class="text-red-400">RED</strong> do not add to revenue until confirmed.</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left text-xs text-slate-300">
+<thead class="bg-slate-800/80 font-headline uppercase tracking-wider text-slate-400">
+<tr>
+<th class="p-3 rounded-l-lg">Order ID / Time</th>
+<th class="p-3">Customer &amp; Phone</th>
+<th class="p-3">Delivery Address</th>
+<th class="p-3">Spec &amp; Qty</th>
+<th class="p-3">Total Amount</th>
+<th class="p-3">Order Status</th>
+<th class="p-3 rounded-r-lg text-right">Lifecycle Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800" id="admin-orders-tbody">
+<!-- Dynamically populated from localStorage -->
+</tbody>
+</table>
+</div>
+<!-- Empty state placeholder for orders -->
+<div class="p-8 text-center text-slate-400 border border-dashed border-slate-800 rounded-xl hidden" id="admin-orders-empty">
+<span class="material-symbols-outlined text-3xl text-slate-600 block mb-1">inbox</span>
+<p class="font-headline font-semibold">No orders yet.</p>
+<p class="text-xs text-slate-500 mt-0.5">Orders placed by customers on WhatsApp will appear here with strict verification buttons.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- MODAL 2: CUSTOMER LEAVE REVIEW DIALOG                    -->
+<!-- ======================================================== -->
+<div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm hidden items-center justify-center p-4" id="review-modal">
+<div class="bg-white rounded-2xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200 space-y-4">
+<div class="flex items-center justify-between">
+<h3 class="font-headline font-bold text-lg text-slate-900 uppercase">Write a Verified Review</h3>
+<button class="text-slate-400 hover:text-slate-600" onclick="toggleReviewModal()">✕</button>
+</div>
+<div>
+<label class="text-xs font-bold text-slate-700 block mb-1">Your Full Name / Pseudo <span class="text-racing-red">*</span></label>
+<input class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-racing-red" id="rev-name" placeholder="e.g. Pierre L." type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="text-xs font-bold text-slate-700 block mb-1">Rating <span class="text-racing-red">*</span></label>
+<select class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-racing-red" id="rev-rating">
+<option value="5">★★★★★ - 5 Stars</option>
+<option value="4">★★★★☆ - 4 Stars</option>
+<option value="3">★★★☆☆ - 3 Stars</option>
+<option value="2">★★☆☆☆ - 2 Stars</option>
+<option value="1">★☆☆☆☆ - 1 Star</option>
+</select>
+</div>
+<div>
+<label class="text-xs font-bold text-slate-700 block mb-1">City / Region (Optional)</label>
+<input class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-racing-red" id="rev-city" placeholder="e.g. Paris / Lyon" type="text"/>
+</div>
+</div>
+<div>
+<label class="text-xs font-bold text-slate-700 block mb-1">Review Title <span class="text-racing-red">*</span></label>
+<input class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-racing-red" id="rev-title" placeholder="e.g. Best motorsport jacket I own" type="text"/>
+</div>
+<div>
+<label class="text-xs font-bold text-slate-700 block mb-1">Your Feedback <span class="text-racing-red">*</span></label>
+<textarea class="w-full px-3 py-2 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-racing-red" id="rev-body" placeholder="Tell us about the fabric weight, zipper quality, and fit..." rows="3"></textarea>
+</div>
+<div class="flex gap-2 pt-2">
+<button class="flex-1 py-2.5 rounded-xl border border-slate-300 font-headline font-bold text-xs uppercase text-slate-700" onclick="toggleReviewModal()">Cancel</button>
+<button class="flex-1 py-2.5 rounded-xl bg-racing-red hover:bg-racing-red-hover text-white font-headline font-bold text-xs uppercase" onclick="submitNewReview()">Submit Review</button>
+</div>
+</div>
+</div>
+<!-- TOAST NOTIFICATION CONTAINER -->
+<div class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 text-xs font-semibold translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-racing-red text-base">check_circle</span>
+<span id="toast-message">Action confirmed</span>
+</div>
+<!-- ======================================================== -->
+<!-- JAVASCRIPT: LOGIC, REAL DATA, TURNTABLE, STORAGE         -->
+<!-- ======================================================== -->
+<script>
+    // --- MULTI-LANGUAGE DICTIONARY (EN default, FR, TA) ---
+    const i18n = {
+      en: {
+        packPromoBadge: "SPECIAL PACK OFFER",
+        packPromoText: "1 Jacket: 19,90 € • Special Bundle: 3 Jackets for 50,00 € (Save 9,70 €)",
+        waDispatchNotice: "WhatsApp Direct Telemetry & Digital BAT Validation",
+        navStorefront: "STOREFRONT",
+        navReviews: "CUSTOMER REVIEWS",
+        navSpecs: "SPECIFICATIONS",
+        navFaq: "BAT & DELIVERY",
+        ownerAdminBtn: "Owner Portal",
+        turntableTitle: "360° ATELIER TURNTABLE SIMULATOR",
+        autoSpin: "Auto-Spin 3D",
+        dragHint: "Drag left/right or use controls to inspect",
+        rotationTrack: "Manual Orbit Angle",
+        angleFront: "0° Front View",
+        angleProfile: "90° Profile",
+        angleBack: "180° Back",
+        angleAtelier: "270° Atelier",
+        badgeGsm: "400 GSM",
+        badgeGsmDesc: "Ultra-heavy cotton",
+        badgeBat: "Digital BAT",
+        badgeBatDesc: "100% WhatsApp Approval",
+        badgeDispatch: "Express",
+        badgeDispatchDesc: "Dispatch under 24H",
+        editionBadge: "COLLECTION 2026 • LIMITED ATELIER RUN",
+        productTitle: "PREMIUM BLACK FULL-ZIP 400 GSM",
+        productDesc: "Tailored motorsport precision zipper jacket. Engineered with 400 GSM heavyweight structured combed cotton, dual reinforced YKK metal hardware, and brushed thermal interior fleece.",
+        bundleTitle: "SPECIAL ATELIER PACK: 3 FOR 50 €",
+        bundleSave: "SAVE 9,70 €",
+        bundleExplanation: "Buy 1 unit for 19,90 €. Choose 3 or more units to automatically trigger the bundle rate of 50,00 € for 3 jackets (mix any sizes)!",
+        unitPriceLabel: "Price per Unit",
+        stockStatus: "IN STOCK & DISPATCHING",
+        selectSizeTitle: "1. Select Chassis Size:",
+        selectQtyTitle: "2. Select Quantity:",
+        totalToPay: "Total to Pay",
+        packApplied: "Pack Applied!",
+        stepFormTitle: "3. Customer Coordinates (Required / Obligatoire):",
+        labelName: "Full Name / Nom Prénom",
+        labelPhone: "WhatsApp Telemetry Phone (with country code)",
+        labelAddress: "Delivery Address (Street, Postal Code, City)",
+        labelNotes: "Custom Livery / BAT Notes (Optional)",
+        btnOrderWhatsApp: "ORDER ON WHATSAPP (19,90 €)",
+        batSecurityNote: "A unique order docket (e.g. #PSP-2026-XXXX) is created. Digital BAT mockups will be dispatched to your WhatsApp for approval prior to needle strike.",
+        reviewsSubtitle: "VERIFIED ATELIER CLIENT FEEDBACK",
+        reviewsTitle: "Customer Reviews & Ratings",
+        btnLeaveReview: "Leave a Review",
+        emptyReviewsTitle: "No client reviews yet",
+        emptyReviewsSubtitle: "Be the first verified customer to share feedback about the 400 GSM technical fit and finish!",
+        specHomologation: "HOMOLOGATION SPECIFICATION",
+        specHeading: "Engineered for Track & Streetwear Luxury",
+        specLead: "Every fiber of the 19,90 € Premium Black Full-Zip is tested to resist high thermal wash cycles, wind resistance, and abrasion while maintaining a stealth haute-couture silhouette.",
+        spec1: "Yarn & Weight",
+        spec2: "Hardware Slider",
+        spec3: "Print Fidelity",
+        spec4: "Pre-Shrunk Tolerance",
+        footerAbout: "Haute couture motorsport technical apparel atelier. Bespoke DTF printing, titanium precision construction, and automated WhatsApp BAT order confirmation.",
+        footerColTitle1: "Direct Hotline",
+        footerColTitle2: "Guarantees",
+        footerColTitle3: "Owner Gate",
+        footerAdminDesc: "Secure access for order validation, live stock editing, and telemetry sync."
+      },
+      fr: {
+        packPromoBadge: "OFFRE SPÉCIALE PACK",
+        packPromoText: "1 Veste : 19,90 € • Pack Spécial : 3 Vestes pour 50,00 € (Économisez 9,70 €)",
+        waDispatchNotice: "Télémétrie Directe WhatsApp & Validation BAT Numérique",
+        navStorefront: "BOUTIQUE",
+        navReviews: "AVIS CLIENTS",
+        navSpecs: "SPÉCIFICATIONS",
+        navFaq: "BAT & LIVRAISON",
+        ownerAdminBtn: "Portail Propriétaire",
+        turntableTitle: "SIMULATEUR 360° PLATEAU ATELIER",
+        autoSpin: "Rotation 3D Auto",
+        dragHint: "Glissez pour faire pivoter ou utilisez les boutons",
+        rotationTrack: "Angle d'orbite manuel",
+        angleFront: "0° Vue Face",
+        angleProfile: "90° Profil",
+        angleBack: "180° Dos",
+        angleAtelier: "270° Atelier",
+        badgeGsm: "400 GSM",
+        badgeGsmDesc: "Coton peigné très lourd",
+        badgeBat: "BAT Numérique",
+        badgeBatDesc: "Validation WhatsApp 100%",
+        badgeDispatch: "Express",
+        badgeDispatchDesc: "Expédition sous 24H",
+        editionBadge: "COLLECTION 2026 • SÉRIE LIMITÉE ATELIER",
+        productTitle: "VESTE ZIPPÉE NOIRE PREMIUM 400 GSM",
+        productDesc: "Veste de précision motorsport coupée dans un coton peigné lourd de 400 GSM avec intérieur molleton doux et zips double sens YKK.",
+        bundleTitle: "PACK SPÉCIAL ATELIER : 3 POUR 50 €",
+        bundleSave: "ÉCONOMISEZ 9,70 €",
+        bundleExplanation: "1 veste pour 19,90 €. Choisissez 3 unités pour déclencher automatiquement le tarif bundle de 50,00 € pour 3 vestes !",
+        unitPriceLabel: "Prix Unitaire",
+        stockStatus: "EN STOCK & EXPÉDITION",
+        selectSizeTitle: "1. Choisir la Taille du Châssis :",
+        selectQtyTitle: "2. Choisir la Quantité :",
+        totalToPay: "Total à Payer",
+        packApplied: "Pack Appliqué !",
+        stepFormTitle: "3. Vos Coordonnées (Obligatoire) :",
+        labelName: "Nom & Prénom",
+        labelPhone: "Numéro de Téléphone WhatsApp (avec indicatif)",
+        labelAddress: "Adresse de Livraison Complète (Rue, Code Postal, Ville)",
+        labelNotes: "Notes de BAT / Flocage Spécial (Facultatif)",
+        btnOrderWhatsApp: "COMMANDER SUR WHATSAPP (19,90 €)",
+        batSecurityNote: "Un identifiant officiel #PSP-2026-XXXX est créé. Votre Bon à Tirer (BAT) sera envoyé directement sur WhatsApp avant fabrication.",
+        reviewsSubtitle: "RETOURS CLIENTS ATELIER VÉRIFIÉS",
+        reviewsTitle: "Avis Clients & Notations",
+        btnLeaveReview: "Donner mon Avis",
+        emptyReviewsTitle: "Aucun avis client pour le moment",
+        emptyReviewsSubtitle: "Soyez le premier client vérifié à partager votre avis sur la coupe 400 GSM !",
+        specHomologation: "SPÉCIFICATIONS HOMOLOGATION",
+        specHeading: "Conçu pour la Course & le Luxe Minimaliste",
+        specLead: "Chaque fibre de la veste 19,90 € est calibrée pour résister à l'abrasion et aux lavages intensifs tout en restant ultra élégante.",
+        spec1: "Fil & Poids",
+        spec2: "Fermeture Éclair",
+        spec3: "Impression DTF",
+        spec4: "Tolérance Rétrécissement",
+        footerAbout: "Atelier haute couture technique motorsport. Flocage DTF haute définition, finitions titane et suivi WhatsApp sécurisé.",
+        footerColTitle1: "Liaison Directe",
+        footerColTitle2: "Garanties",
+        footerColTitle3: "Accès Propriétaire",
+        footerAdminDesc: "Accès restreint pour gestion des commandes et du stock en direct."
+      },
+      ta: {
+        packPromoBadge: "சிறப்பு காம்போ ஆஃபர்",
+        packPromoText: "1 ஜாக்கெட்: 19,90 € • சிறப்பு ஆஃபர்: 3 ஜாக்கெட்டுகள் 50,00 € மட்டுமே (9,70 € சேமிப்பு)",
+        waDispatchNotice: "நேரடி வாட்ஸ்அப் ஆர்டர் & டிஜிட்டல் BAT ஒப்புதல்",
+        navStorefront: "முகப்பு தளம்",
+        navReviews: "வாடிக்கையாளர் மதிப்புரைகள்",
+        navSpecs: "விபரங்கள்",
+        navFaq: "BAT & டெலிவரி",
+        ownerAdminBtn: "உரிமையாளர் தளம்",
+        turntableTitle: "360° 3D ஜாக்கெட் சுழல் பார்வை",
+        autoSpin: "தானியங்கி 3D சுழற்சி",
+        dragHint: "சுழற்றிப் பார்க்க இடவலமாக இழுக்கவும்",
+        rotationTrack: "கோணக் கட்டுப்பாடு",
+        angleFront: "0° முன் பார்வை",
+        angleProfile: "90° பக்க பார்வை",
+        angleBack: "180° பின் பார்வை",
+        angleAtelier: "270° பிரதான பார்வை",
+        badgeGsm: "400 GSM",
+        badgeGsmDesc: "அடர்த்தியான பிரீமியம் பருத்தி",
+        badgeBat: "டிஜிட்டல் BAT",
+        badgeBatDesc: "100% வாட்ஸ்அப் ஒப்புதல்",
+        badgeDispatch: "விரைவு டெலிவரி",
+        badgeDispatchDesc: "24 மணி நேரத்திற்குள் அனுப்பப்படும்",
+        editionBadge: "பதிப்பு 2026 • பிரத்தியேக அட்லியே தயாரிப்பு",
+        productTitle: "பிரீமியம் பிளாக் ஃபுல்-ஜிப் 400 GSM",
+        productDesc: "மோட்டார்ஸ்போர்ட் தரம் வாய்ந்த கனரக 400 GSM பருத்தி மற்றும் இரட்டை YKK உலோக ஜிப் கொண்டு பிரத்யேகமாக தைக்கப்பட்டது.",
+        bundleTitle: "சிறப்பு ஆஃபர் பேக் : 3 ஜாக்கெட்டுகள் 50 € மட்டுமே",
+        bundleSave: "9,70 € சேமிப்பு",
+        bundleExplanation: "1 ஜாக்கெட் 19,90 €. 3 அல்லது அதற்கு மேற்பட்டவற்றைத் தேர்ந்தெடுக்கும்போது தானாக 3 ஜாக்கெட் 50,00 € என்ற சலுகை விலை கணக்கிடப்படும்!",
+        unitPriceLabel: "ஒரு ஜாக்கெட்டின் விலை",
+        stockStatus: "இருப்பில் உள்ளது & அனுப்பத் தயார்",
+        selectSizeTitle: "1. அளவைத் தேர்ந்தெடுக்கவும் :",
+        selectQtyTitle: "2. எண்ணிக்கையைத் தேர்ந்தெடுக்கவும் :",
+        totalToPay: "செலுத்த வேண்டிய தொகை",
+        packApplied: "சலுகை விலை சேர்க்கப்பட்டது!",
+        stepFormTitle: "3. உங்கள் விபரங்கள் (கட்டாயம் பூர்த்தி செய்ய வேண்டும்) :",
+        labelName: "முழுப் பெயர் (Name)",
+        labelPhone: "வாட்ஸ்அப் எண் (WhatsApp Number)",
+        labelAddress: "முழு டெலிவரி முகவரி (Delivery Address)",
+        labelNotes: "கூடுதல் குறிப்புகள் (Optional)",
+        btnOrderWhatsApp: "வாட்ஸ்அப்பில் ஆர்டர் செய்க (19,90 €)",
+        batSecurityNote: "உங்கள் ஆர்டருக்கு #PSP-2026-XXXX என்ற எண் ஒதுக்கப்பட்டு, அச்சிடுவதற்கு முன் வாட்ஸ்அப்பில் மாடல் சரிபார்க்க அனுப்பப்படும்.",
+        reviewsSubtitle: "உண்மையான வாடிக்கையாளர் கருத்துக்கள்",
+        reviewsTitle: "வாடிக்கையாளர் மதிப்புரைகள்",
+        btnLeaveReview: "கருத்து பகிர்க",
+        emptyReviewsTitle: "இன்னும் மதிப்புரைகள் இல்லை",
+        emptyReviewsSubtitle: "400 GSM ஜாக்கெட் பற்றிய முதல் வாடிக்கையாளர் கருத்தை பதிவு செய்யுங்கள்!",
+        specHomologation: "தொழில்நுட்ப விவரக்குறிப்புகள்",
+        specHeading: "நீண்ட ஆயுள் மற்றும் ரேசிங் தரம்",
+        specLead: "ஒவ்வொரு 19,90 € ஜாக்கெட்டும் பலமுறை துவைத்தாலும் நிறம் மற்றும் வடிவம் மாறாத வண்ணம் உறுதி செய்யப்பட்டுள்ளது.",
+        spec1: "நூல் & எடை",
+        spec2: "ஜிப் தரம்",
+        spec3: "DTF அச்சு முறை",
+        spec4: "சுருங்கும் தன்மை",
+        footerAbout: "உயர்ரக தொழில்நுட்ப ஆடைகள் மற்றும் டிடிஎஃப் பிரிண்டிங் பட்டறை.",
+        footerColTitle1: "நேரடி உதவி",
+        footerColTitle2: "உத்தரவாதம்",
+        footerColTitle3: "அட்மின் அணுகல்",
+        footerAdminDesc: "உரிமையாளர் ஆர்டர்களைக் காணும் பிரத்தியேகப் பகுதி."
+      }
+    };
+
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      ['en', 'fr', 'ta'].forEach(l => {
+        const btn = document.getElementById(`lang-${l}`);
+        if (btn) {
+          if (l === lang) {
+            btn.className = "px-2 py-0.5 rounded text-[11px] font-headline font-bold transition-all bg-racing-red text-white";
+          } else {
+            btn.className = "px-2 py-0.5 rounded text-[11px] font-headline font-bold transition-all text-slate-300 hover:text-white";
+          }
+        }
+      });
+
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+          el.textContent = i18n[lang][key];
+        }
+      });
+
+      updatePriceCalculation();
+      renderReviewsUI();
+    }
+
+    // --- 3D TURNTABLE LOGIC ---
+    let currentAngle = 270;
+    let isDragging = false;
+    let startX = 0;
+    let isAutoPlaying = false;
+    let autoPlayInterval = null;
+
+    const turntableImg = document.getElementById('turntable-image');
+    const turntableContainer = document.getElementById('turntable-container');
+    const turntableSlider = document.getElementById('turntable-slider');
+    const degLabel = document.getElementById('turntable-deg-label');
+    const sliderAngleReadout = document.getElementById('slider-angle-readout');
+
+    function renderTurntable(deg) {
+      currentAngle = (deg % 360 + 360) % 360;
+      if (turntableSlider) turntableSlider.value = Math.round(currentAngle);
+      if (degLabel) degLabel.textContent = `ANGLE: ${Math.round(currentAngle)}°`;
+      if (sliderAngleReadout) sliderAngleReadout.textContent = `${Math.round(currentAngle)}°`;
+
+      const rad = (currentAngle * Math.PI) / 180;
+      const skew = Math.sin(rad) * 3.5;
+      const scale = 0.94 + Math.abs(Math.cos(rad)) * 0.06;
+
+      if (turntableImg) {
+        turntableImg.style.transform = `scale(${scale}) skewY(${skew * 0.3}deg)`;
+      }
+    }
+
+    function setAngle(deg) {
+      if (isAutoPlaying) toggleAutoPlay();
+      renderTurntable(deg);
+    }
+
+    function onSliderMove(val) {
+      if (isAutoPlaying) toggleAutoPlay();
+      renderTurntable(parseFloat(val));
+    }
+
+    function toggleAutoPlay() {
+      isAutoPlaying = !isAutoPlaying;
+      const btn = document.getElementById('autoplay-btn');
+      const icon = document.getElementById('autoplay-icon');
+      const txt = document.getElementById('autoplay-text');
+
+      if (isAutoPlaying) {
+        btn.classList.replace('bg-slate-900', 'bg-racing-red');
+        icon.textContent = 'pause';
+        txt.textContent = currentLang === 'ta' ? 'நிறுத்து' : (currentLang === 'fr' ? 'Pause' : 'Pause');
+        autoPlayInterval = setInterval(() => {
+          renderTurntable(currentAngle + 1.2);
+        }, 30);
+      } else {
+        btn.classList.replace('bg-racing-red', 'bg-slate-900');
+        icon.textContent = 'play_arrow';
+        txt.textContent = currentLang === 'ta' ? 'தானியங்கி 3D சுழற்சி' : (currentLang === 'fr' ? 'Rotation 3D Auto' : 'Auto-Spin 3D');
+        clearInterval(autoPlayInterval);
+      }
+    }
+
+    turntableContainer.addEventListener('mousedown', (e) => {
+      if (isAutoPlaying) toggleAutoPlay();
+      isDragging = true;
+      startX = e.clientX;
+    });
+
+    window.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      const delta = e.clientX - startX;
+      startX = e.clientX;
+      renderTurntable(currentAngle + delta * 0.65);
+    });
+
+    window.addEventListener('mouseup', () => { isDragging = false; });
+
+    turntableContainer.addEventListener('touchstart', (e) => {
+      if (isAutoPlaying) toggleAutoPlay();
+      if (e.touches.length === 1) {
+        isDragging = true;
+        startX = e.touches[0].clientX;
+      }
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+      if (!isDragging || e.touches.length !== 1) return;
+      const delta = e.touches[0].clientX - startX;
+      startX = e.touches[0].clientX;
+      renderTurntable(currentAngle + delta * 0.65);
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => { isDragging = false; });
+
+    // --- SIZE & QUANTITY BUNDLE (3 FOR 50€) PRICING ENGINE ---
+    let selectedSize = 'L';
+    let currentQty = 1;
+    let liveStocks = JSON.parse(localStorage.getItem('ps_stocks')) || { S: 14, M: 38, L: 56, XL: 27, XXL: 12 };
+
+    function syncStockDisplay() {
+      ['S', 'M', 'L', 'XL', 'XXL'].forEach(sz => {
+        const el = document.getElementById(`stock-${sz}`);
+        if (el) el.textContent = `${liveStocks[sz]} left`;
+        const adminInp = document.getElementById(`admin-stock-${sz}`);
+        if (adminInp) adminInp.value = liveStocks[sz];
+      });
+      const totalStock = Object.values(liveStocks).reduce((a, b) => a + b, 0);
+      const kpiStock = document.getElementById('admin-kpi-stock');
+      if (kpiStock) kpiStock.textContent = totalStock;
+      const chassisText = document.getElementById('chassis-available-text');
+      if (chassisText) chassisText.textContent = `${totalStock} chassis available in atelier`;
+    }
+
+    function selectSize(size) {
+      selectedSize = size;
+      document.getElementById('active-size-label').textContent = `SIZE: ${size} (Selected)`;
+
+      document.querySelectorAll('.size-btn').forEach(btn => {
+        if (btn.getAttribute('data-size') === size) {
+          btn.className = "size-btn p-2 rounded-lg border-2 border-racing-red bg-red-50/50 text-center transition-all shadow-sm";
+          btn.querySelector('span:first-child').className = "font-headline font-bold text-sm block text-racing-red";
+        } else {
+          btn.className = "size-btn p-2 rounded-lg border-2 border-slate-200 hover:border-slate-400 text-center transition-all bg-white";
+          btn.querySelector('span:first-child').className = "font-headline font-bold text-sm block text-slate-900";
+        }
+      });
+    }
+
+    function adjustOrderQty(delta) {
+      let q = currentQty + delta;
+      if (q < 1) q = 1;
+      if (q > 50) q = 50;
+      currentQty = q;
+      document.getElementById('order-qty-input').value = currentQty;
+      updatePriceCalculation();
+    }
+
+    function onQtyDirectChange(val) {
+      let q = parseInt(val, 10);
+      if (isNaN(q) || q < 1) q = 1;
+      if (q > 50) q = 50;
+      currentQty = q;
+      document.getElementById('order-qty-input').value = currentQty;
+      updatePriceCalculation();
+    }
+
+    function calculateBundlePrice(qty) {
+      const packsOfThree = Math.floor(qty / 3);
+      const remainder = qty % 3;
+      const total = (packsOfThree * 50.00) + (remainder * 19.90);
+      const normalTotal = qty * 19.90;
+      const savings = normalTotal - total;
+
+      return { total: total.toFixed(2), numericTotal: total, packs: packsOfThree, remainder, savings: savings.toFixed(2) };
+    }
+
+    function updatePriceCalculation() {
+      const { total, packs } = calculateBundlePrice(currentQty);
+      const totalFormatted = `${total.replace('.', ',')} €`;
+
+      document.getElementById('final-total-price').textContent = totalFormatted;
+
+      const formulaEl = document.getElementById('calculation-formula');
+      const savingTag = document.getElementById('bundle-saving-tag');
+      const orderBtnText = document.getElementById('order-button-text');
+
+      if (packs > 0) {
+        formulaEl.innerHTML = `<span class="text-emerald-600 font-bold">${packs} Pack(s) @ 50€</span> + ${currentQty % 3} x 19,90 €`;
+        savingTag.classList.remove('hidden');
+      } else {
+        formulaEl.textContent = `${currentQty} x 19,90 € = ${totalFormatted}`;
+        savingTag.classList.add('hidden');
+      }
+
+      if (currentLang === 'ta') {
+        orderBtnText.textContent = `வாட்ஸ்அப்பில் ஆர்டர் செய்க (${totalFormatted})`;
+      } else if (currentLang === 'fr') {
+        orderBtnText.textContent = `COMMANDER SUR WHATSAPP (${totalFormatted})`;
+      } else {
+        orderBtnText.textContent = `ORDER ON WHATSAPP (${totalFormatted})`;
+      }
+    }
+
+    // --- REAL ORDERS MANAGEMENT & STRICT LIFECYCLE LOGIC ---
+    // Orders schema: [{ id, date, name, phone, address, notes, size, qty, total: number, status: 'PENDING' | 'CONFIRMED' | 'REJECTED' }]
+    function getOrders() {
+      try {
+        return JSON.parse(localStorage.getItem('ps_orders')) || [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveOrders(orders) {
+      localStorage.setItem('ps_orders', JSON.stringify(orders));
+      renderOrdersUI();
+    }
+
+    function renderOrdersUI() {
+      const orders = getOrders();
+      const tbody = document.getElementById('admin-orders-tbody');
+      const emptyState = document.getElementById('admin-orders-empty');
+      tbody.innerHTML = '';
+
+      let confirmedRevenue = 0;
+      let pendingCount = 0;
+
+      if (orders.length === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+        orders.forEach((o, index) => {
+          if (o.status === 'CONFIRMED') {
+            confirmedRevenue += Number(o.total) || 0;
+          } else if (o.status === 'PENDING') {
+            pendingCount++;
+          }
+
+          const tr = document.createElement('tr');
+          const isPending = o.status === 'PENDING';
+          const isConfirmed = o.status === 'CONFIRMED';
+          const isRejected = o.status === 'REJECTED';
+
+          tr.className = `hover:bg-slate-800/40 transition-colors ${isPending ? 'bg-red-950/20' : ''}`;
+
+          let statusBadge = '';
+          if (isPending) {
+            statusBadge = `<span class="px-2.5 py-1 rounded bg-red-500/10 border border-racing-red text-racing-red-bright font-bold text-[10px] uppercase tracking-wider inline-flex items-center gap-1">
+              <span class="w-1.5 h-1.5 rounded-full bg-racing-red animate-ping"></span> PENDING APPROVAL
+            </span>`;
+          } else if (isConfirmed) {
+            statusBadge = `<span class="px-2.5 py-1 rounded bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 font-bold text-[10px] uppercase tracking-wider">
+              ✓ CONFIRMED (PAID)
+            </span>`;
+          } else {
+            statusBadge = `<span class="px-2.5 py-1 rounded bg-slate-700 text-slate-400 font-bold text-[10px] uppercase tracking-wider">
+              REJECTED / VOID
+            </span>`;
+          }
+
+          let actionButtons = '';
+          if (isPending) {
+            actionButtons = `
+              <div class="flex items-center justify-end gap-1.5">
+                <button onclick="confirmOrder('${o.id}')" class="px-2.5 py-1 rounded bg-emerald-600 hover:bg-emerald-500 text-white font-headline font-bold text-[11px] uppercase tracking-wider shadow-sm transition-all" title="Confirm Order & Add to Total Revenue">
+                  ✓ Confirm
+                </button>
+                <button onclick="rejectOrder('${o.id}')" class="px-2 py-1 rounded bg-slate-800 hover:bg-red-900/60 text-slate-300 hover:text-red-300 font-headline font-semibold text-[11px] uppercase transition-all" title="Reject Order">
+                  ✕ Reject
+                </button>
+                <a href="https://wa.me/33751392075?text=${encodeURIComponent('Hello ' + o.name + ', confirming order #' + o.id)}" target="_blank" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-racing-red font-bold text-[11px]" title="Chat on WhatsApp">WA</a>
+              </div>
+            `;
+          } else {
+            actionButtons = `
+              <div class="flex items-center justify-end gap-2">
+                <a href="https://wa.me/33751392075?text=${encodeURIComponent('Update on Order #' + o.id)}" target="_blank" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-white font-bold text-[11px]">Chat</a>
+                <button onclick="deleteOrder('${o.id}')" class="p-1 rounded text-slate-500 hover:text-red-400 hover:bg-slate-800 transition-colors" title="Delete record">
+                  <span class="material-symbols-outlined text-sm">delete</span>
+                </button>
+              </div>
+            `;
+          }
+
+          const totalFormatted = (Number(o.total) || 0).toFixed(2).replace('.', ',') + ' €';
+
+          tr.innerHTML = `
+            <td class="p-3 font-mono font-bold text-racing-red">
+              #${o.id}<br/>
+              <span class="text-[10px] text-slate-500 font-normal font-sans">${o.date}</span>
+            </td>
+            <td class="p-3 font-semibold text-white">
+              ${escapeHtml(o.name)}<br/>
+              <span class="text-slate-400 text-[11px] font-mono">${escapeHtml(o.phone)}</span>
+            </td>
+            <td class="p-3 text-slate-300 max-w-xs truncate" title="${escapeHtml(o.address)}">
+              ${escapeHtml(o.address)}
+            </td>
+            <td class="p-3 font-semibold text-white">
+              Size ${o.size} • Qty: ${o.qty}
+            </td>
+            <td class="p-3 font-headline font-bold text-white text-sm">
+              ${totalFormatted}
+            </td>
+            <td class="p-3">
+              ${statusBadge}
+            </td>
+            <td class="p-3 text-right">
+              ${actionButtons}
+            </td>
+          `;
+          tbody.appendChild(tr);
+        });
+      }
+
+      // Update Owner KPIs
+      document.getElementById('admin-kpi-orders').textContent = orders.length;
+      document.getElementById('admin-kpi-revenue').textContent = confirmedRevenue.toFixed(2).replace('.', ',') + ' €';
+      document.getElementById('admin-kpi-pending').textContent = pendingCount;
+    }
+
+    function confirmOrder(orderId) {
+      let orders = getOrders();
+      const idx = orders.findIndex(o => o.id === orderId);
+      if (idx !== -1) {
+        orders[idx].status = 'CONFIRMED';
+        saveOrders(orders);
+        showToast(`Order #${orderId} CONFIRMED! Revenue added to total.`);
+      }
+    }
+
+    function rejectOrder(orderId) {
+      let orders = getOrders();
+      const idx = orders.findIndex(o => o.id === orderId);
+      if (idx !== -1) {
+        orders[idx].status = 'REJECTED';
+        saveOrders(orders);
+        showToast(`Order #${orderId} marked as REJECTED.`);
+      }
+    }
+
+    function deleteOrder(orderId) {
+      if (confirm(`Delete order docket #${orderId}?`)) {
+        let orders = getOrders();
+        orders = orders.filter(o => o.id !== orderId);
+        saveOrders(orders);
+        showToast(`Order #${orderId} deleted.`);
+      }
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // --- WHATSAPP SUBMIT ORDER ---
+    function submitWhatsAppOrder() {
+      const name = document.getElementById('customer-name').value.trim();
+      const phone = document.getElementById('customer-phone').value.trim();
+      const address = document.getElementById('customer-address').value.trim();
+      const notes = document.getElementById('customer-notes').value.trim() || 'Standard Atelier Run';
+      const errorBox = document.getElementById('form-error-alert');
+
+      if (!name || !phone || !address) {
+        errorBox.classList.remove('hidden');
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+      errorBox.classList.add('hidden');
+
+      const { total, numericTotal, packs } = calculateBundlePrice(currentQty);
+      const orderId = 'PSP-2026-' + Math.floor(1000 + Math.random() * 9000);
+      const packNote = packs > 0 ? `(3-for-50€ Pack Activated)` : `(Standard Single Rate)`;
+
+      // Construct WhatsApp message URI
+      const message = encodeURIComponent(
+        `*PS PRINTING • OFFICIAL ATELIER ORDER*\n\n` +
+        `*Order ID:* #${orderId}\n` +
+        `*Product:* Premium Black Full-Zip 400 GSM\n` +
+        `*Size:* ${selectedSize}\n` +
+        `*Quantity:* ${currentQty} ${packNote}\n` +
+        `*Total Price:* ${total} €\n\n` +
+        `*Customer Name:* ${name}\n` +
+        `*WhatsApp Phone:* ${phone}\n` +
+        `*Delivery Address:* ${address}\n` +
+        `*BAT / Livery Notes:* ${notes}\n\n` +
+        `Please confirm receipt and send digital BAT proof.`
+      );
+
+      // Create new PENDING order in localStorage (Revenue remains 0 until Owner confirms!)
+      const now = new Date();
+      const dateStr = now.toLocaleDateString() + ' ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const newOrder = {
+        id: orderId,
+        date: dateStr,
+        name: name,
+        phone: phone,
+        address: address,
+        notes: notes,
+        size: selectedSize,
+        qty: currentQty,
+        total: numericTotal,
+        status: 'PENDING'
+      };
+
+      const orders = getOrders();
+      orders.unshift(newOrder);
+      saveOrders(orders);
+
+      // Deduct stock locally
+      if (liveStocks[selectedSize]) {
+        liveStocks[selectedSize] = Math.max(0, liveStocks[selectedSize] - currentQty);
+        localStorage.setItem('ps_stocks', JSON.stringify(liveStocks));
+        syncStockDisplay();
+      }
+
+      showToast(`Order #${orderId} placed (Status: PENDING BAT). Opening WhatsApp...`);
+
+      setTimeout(() => {
+        window.open(`https://wa.me/33751392075?text=${message}`, '_blank');
+      }, 400);
+    }
+
+    // --- REAL USER REVIEWS LOGIC ---
+    // Review schema: [{ id, name, city, rating, title, body, date, size }]
+    function getReviews() {
+      try {
+        return JSON.parse(localStorage.getItem('ps_reviews')) || [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function saveReviews(reviews) {
+      localStorage.setItem('ps_reviews', JSON.stringify(reviews));
+      renderReviewsUI();
+    }
+
+    function renderReviewsUI() {
+      const reviews = getReviews();
+      const container = document.getElementById('reviews-card-container');
+      const emptyState = document.getElementById('reviews-empty-state');
+      container.innerHTML = '';
+
+      const count = reviews.length;
+      let totalRating = 0;
+      const distribution = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
+
+      reviews.forEach(r => {
+        const ratingVal = parseInt(r.rating, 10) || 5;
+        totalRating += ratingVal;
+        if (distribution[ratingVal] !== undefined) distribution[ratingVal]++;
+      });
+
+      const avg = count > 0 ? (totalRating / count).toFixed(1) : '0.0';
+      const avgNum = parseFloat(avg);
+
+      // Stars string generator
+      function getStars(val) {
+        let s = '';
+        for (let i = 1; i <= 5; i++) {
+          s += i <= val ? '★' : '☆';
+        }
+        return s;
+      }
+
+      // Update Nav Link & Badges
+      const navReviewsLink = document.getElementById('nav-reviews-link');
+      if (navReviewsLink) {
+        navReviewsLink.textContent = count > 0 ? `CUSTOMER REVIEWS (${avg}★)` : `CUSTOMER REVIEWS (0)`;
+      }
+      document.getElementById('header-rating-val').textContent = avg;
+      document.getElementById('header-rating-count').textContent = `(${count})`;
+      document.getElementById('header-stars').textContent = getStars(Math.round(avgNum));
+
+      document.getElementById('badge-rating-val').textContent = `${avg} / 5.0`;
+      document.getElementById('badge-reviews-count').textContent = `${count} verified review${count === 1 ? '' : 's'}`;
+
+      document.getElementById('review-main-score').innerHTML = `${avg}<span class="text-2xl text-slate-400"> / 5.0</span>`;
+      document.getElementById('review-main-stars').textContent = getStars(Math.round(avgNum));
+      document.getElementById('review-score-basis').textContent = count > 0 
+        ? `Based on ${count} verified client review${count === 1 ? '' : 's'}`
+        : 'Based on 0 verified client reviews';
+
+      const recBadge = document.getElementById('review-recommend-badge');
+      const recText = document.getElementById('review-rec-rate');
+      if (count > 0) {
+        const positive = distribution[5] + distribution[4];
+        const pct = Math.round((positive / count) * 100);
+        recBadge.className = "mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-[11px] font-bold";
+        recText.textContent = `${pct}% of customers recommend this jacket`;
+      } else {
+        recBadge.className = "mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold";
+        recText.textContent = "No reviews yet • Be the first verified client";
+      }
+
+      // Distribution Bars
+      for (let star = 1; star <= 5; star++) {
+        const c = distribution[star];
+        const pct = count > 0 ? (c / count) * 100 : 0;
+        const bar = document.getElementById(`bar-${star}`);
+        const countLabel = document.getElementById(`count-bar-${star}`);
+        if (bar) bar.style.width = `${pct}%`;
+        if (countLabel) countLabel.textContent = c;
+      }
+
+      // Review cards list
+      if (count === 0) {
+        emptyState.classList.remove('hidden');
+      } else {
+        emptyState.classList.add('hidden');
+        reviews.forEach(r => {
+          const card = document.createElement('div');
+          card.className = "bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3 flex flex-col justify-between";
+          card.innerHTML = `
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm">${getStars(parseInt(r.rating, 10))}</div>
+                <span class="text-xs text-slate-400">${escapeHtml(r.date)}</span>
+              </div>
+              <h3 class="font-headline font-bold text-sm text-slate-900">${escapeHtml(r.title)}</h3>
+              <p class="text-xs text-slate-600 leading-relaxed">"${escapeHtml(r.body)}"</p>
+            </div>
+            <div class="flex items-center justify-between pt-3 border-t border-slate-100 text-xs">
+              <div class="font-bold text-slate-800">${escapeHtml(r.name)} <span class="text-emerald-600 font-normal ml-1">✓ Verified Client</span></div>
+              <span class="text-slate-400">Size ${escapeHtml(r.size || 'L')} ${r.city ? '• ' + escapeHtml(r.city) : ''}</span>
+            </div>
+          `;
+          container.appendChild(card);
+        });
+      }
+    }
+
+    function toggleReviewModal() {
+      const m = document.getElementById('review-modal');
+      m.classList.toggle('hidden');
+      m.classList.toggle('flex');
+    }
+
+    function submitNewReview() {
+      const name = document.getElementById('rev-name').value.trim();
+      const city = document.getElementById('rev-city').value.trim();
+      const rating = document.getElementById('rev-rating').value;
+      const title = document.getElementById('rev-title').value.trim();
+      const body = document.getElementById('rev-body').value.trim();
+
+      if (!name || !title || !body) {
+        alert("Please fill in your Name, Review Title, and Feedback.");
+        return;
+      }
+
+      const now = new Date();
+      const dateStr = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+      const newReview = {
+        id: 'rev_' + Date.now(),
+        name,
+        city,
+        rating: parseInt(rating, 10),
+        title,
+        body,
+        date: dateStr,
+        size: selectedSize
+      };
+
+      const reviews = getReviews();
+      reviews.unshift(newReview);
+      saveReviews(reviews);
+
+      // Clear form
+      document.getElementById('rev-name').value = '';
+      document.getElementById('rev-city').value = '';
+      document.getElementById('rev-title').value = '';
+      document.getElementById('rev-body').value = '';
+
+      toggleReviewModal();
+      showToast("Thank you! Your verified client review has been published.");
+    }
+
+    // --- OWNER ADMIN PIN SECURITY (PIN: 7788) ---
+    function openAdminModal() {
+      document.getElementById('pin-modal').classList.remove('hidden');
+      document.getElementById('pin-modal').classList.add('flex');
+      document.getElementById('pin-input').value = '';
+      document.getElementById('pin-error').classList.add('hidden');
+      document.getElementById('pin-input').focus();
+    }
+
+    function closeAdminModal() {
+      document.getElementById('pin-modal').classList.add('hidden');
+      document.getElementById('pin-modal').classList.remove('flex');
+    }
+
+    function verifyPin() {
+      const pin = document.getElementById('pin-input').value.trim();
+      if (pin === '7788') {
+        closeAdminModal();
+        document.getElementById('admin-portal').classList.remove('hidden');
+        renderOrdersUI();
+        syncStockDisplay();
+        showToast("Welcome Owner! Command Telemetry Unlocked.");
+      } else {
+        document.getElementById('pin-error').classList.remove('hidden');
+      }
+    }
+
+    document.getElementById('pin-input').addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') verifyPin();
+    });
+
+    function closeAdminPortal() {
+      document.getElementById('admin-portal').classList.add('hidden');
+      showToast("Owner Console Locked.");
+    }
+
+    function saveAdminStock() {
+      liveStocks.S = parseInt(document.getElementById('admin-stock-S').value, 10) || 0;
+      liveStocks.M = parseInt(document.getElementById('admin-stock-M').value, 10) || 0;
+      liveStocks.L = parseInt(document.getElementById('admin-stock-L').value, 10) || 0;
+      liveStocks.XL = parseInt(document.getElementById('admin-stock-XL').value, 10) || 0;
+      liveStocks.XXL = parseInt(document.getElementById('admin-stock-XXL').value, 10) || 0;
+
+      localStorage.setItem('ps_stocks', JSON.stringify(liveStocks));
+      syncStockDisplay();
+      showToast("Stock updated across storefront & database!");
+    }
+
+    // --- WISHLIST (Starts at 0, Real User Interaction) ---
+    let wishlistCount = parseInt(localStorage.getItem('ps_wishlist_count') || '0', 10);
+    let isWishlisted = localStorage.getItem('ps_is_wishlisted') === 'true';
+
+    function initWishlistUI() {
+      document.getElementById('wishlist-count').textContent = wishlistCount;
+      const icon = document.getElementById('wishlist-icon');
+      icon.textContent = isWishlisted ? 'favorite' : 'favorite_border';
+    }
+
+    function toggleWishlist() {
+      isWishlisted = !isWishlisted;
+      wishlistCount += isWishlisted ? 1 : -1;
+      if (wishlistCount < 0) wishlistCount = 0;
+      
+      localStorage.setItem('ps_wishlist_count', wishlistCount);
+      localStorage.setItem('ps_is_wishlisted', isWishlisted);
+      initWishlistUI();
+
+      if (isWishlisted) {
+        showToast("Added to your atelier wishlist! ❤️");
+      } else {
+        showToast("Removed from wishlist.");
+      }
+    }
+
+    function shareStorefront() {
+      if (navigator.share) {
+        navigator.share({
+          title: "PS PRINTING - Premium Black Full-Zip 400 GSM",
+          text: "Check out this 400 GSM motorsport full-zip jacket for 19,90 € (or 3 for 50 €) at PS Printing Atelier!",
+          url: window.location.href,
+        }).catch(() => {});
+      } else {
+        navigator.clipboard.writeText(window.location.href);
+        showToast("Store link copied to clipboard!");
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-message').textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3200);
+    }
+
+    // --- INITIALIZE APPLICATION STATE ---
+    window.addEventListener('DOMContentLoaded', () => {
+      renderTurntable(270);
+      updatePriceCalculation();
+      syncStockDisplay();
+      initWishlistUI();
+      renderOrdersUI();
+      renderReviewsUI();
+    });
+  </script>
+</body></html>
